@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Sign_In.css">
+</head>
+<body>
+    
+    <form  class="box-shadow">
+
+        <div class="background-img">
+            <img src="./person-circle.svg" class="img-person">
+        </div> 
+
+        <div class="art-1 art-All">
+            <label class="script-Name" for="name">Full name</label>
+            <input class="name-box" type="text" placeholder="Enter your name"
+            onkeyup="ValidateName()">
+            <ion-icon id ="checkmark" class="checkmark-1" name="checkmark-circle-sharp"></ion-icon>
+            <span id="errorN"></span>
+
+        </div>
+        
+        <div class="art-2" art-All>
+            <label class="script-em">Email</label> 
+            <input type="text" class="email-box" placeholder="Enter your email" 
+            onkeyup="ValidateEmail()"> 
+            <ion-icon id ="checkmark" class="checkmark-2" name="checkmark-circle-sharp"></ion-icon>
+            <span id="errorE"></span>
+        </div>
+
+        <div class="art-3 art-All">
+            <label class="script-pw">Password</label> 
+            <input type="password" class="password-box" placeholder="Enter your password" 
+            onkeyup="ValidatePassword()"> 
+            <ion-icon id ="checkmark" class="checkmark-3" name="checkmark-circle-sharp"></ion-icon>
+            <span id="errorP"></span>
+            
+        </div> 
+
+        <a class="forgot-a" href="#">forgot password ?</a>
+        <button onclick="ValidateForm()" type="submit" class="singIn">Sign In</button>
+        <span id="errorS"></span>
+
+    </form>
+
+    
+
+   <script src="./form.js"></script>
+   <script src="https://kit.fontawesome.com/dcadbf7b72.js" crossorigin="anonymous"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 

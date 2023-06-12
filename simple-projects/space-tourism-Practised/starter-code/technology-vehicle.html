@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body id="tech-img">
+
+  <span id="nav-ic">
+    <img id="ic" src="./assets/shared/logo.svg" >
+  </span>
+
+
+  <div id="navParent">
+    <div id="nav-line"></div>
+    <nav class="navbar">  
+        <a href="./index.html"><span class="numbers number1">00</span> Home </a>
+        <a href="./destination-moon.html"><span class="numbers number2">01</span> Destination </a>
+        <a href="./crew-commander.html"><span class="numbers number3">02</span> Crew </a>
+        <a href="./technology-vehicle.html"><span class="numbers number4">03</span> Technology </a>
+      </nav>
+  </div>
+
+
+
+  <div class="icons">
+      <i class="open-ic fa-solid fa-bars" onclick='OpenNav()'></i>
+      <i class="close-ic fa-solid fa-xmark" onclick='CloseNav()'></i>
+    </div>
+
+<section class="tech-grid">
+
+    <div class="tech-meet">
+        <span>03</span> space launch 101
+    </div>  
+
+    <div class="tech-img">
+        <img src="./assets/technology/image-launch-vehicle-landscape.jpg" >
+        <img src="./assets/technology/image-launch-vehicle-portrait.jpg" >
+    </div>
+
+    <div class="tech-articles">
+        <a href="#" onclick="openArticle1()">1</a>
+        <a href="#" onclick="openArticle2()">2</a>
+        <a href="#" onclick="openArticle3()">3</a>
+    </div> 
+
+    <div class="tech-names">
+        <span>The terminology...</span>
+        <span>Launch vehicle</span>
+    </div>
+
+    <div class="tech-parent">
+        <p class="tech-p">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!
+        </p>
+    </div>
+
+</section>
+
+<!-- <img src="./assets/technology/image-launch-vehicle-portrait.jpg"> -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/dcadbf7b72.js" crossorigin="anonymous"></script>
+<script src="./tech.js"></script>
+
+
+</body>
+</html>

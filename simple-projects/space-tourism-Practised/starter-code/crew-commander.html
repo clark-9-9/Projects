@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body id="crew-img">
+
+  <span id="nav-ic">
+    <img id="ic" src="./assets/shared/logo.svg" >
+  </span>
+
+
+  <div id="navParent">
+    <div id="nav-line"></div>
+    <nav class="navbar">  
+        <a href="./index.html"><span class="numbers number1">00</span> Home </a>
+        <a href="./destination-moon.html"><span class="numbers number2">01</span> Destination </a>
+        <a href="./crew-commander.html"><span class="numbers number3">02</span> Crew </a>
+        <a href="./technology-vehicle.html"><span class="numbers number4">03</span> Technology </a>
+      </nav>
+  </div>
+
+    <div class="icons">
+      <i class="open-ic fa-solid fa-bars" onclick='OpenNav()'></i>
+      <i class="close-ic fa-solid fa-xmark" onclick='OpenNav()'></i>
+    </div>
+
+
+
+<section class="grid-crew">
+
+      <div class="meet-crew"><span id="crew-num">02</span> 
+        Meet your crew
+      </div>
+       
+      <div class="picture">
+        <img class="crew-img" src="./assets/crew/image-douglas-hurley.png" >
+        <div id="crew-line"></div>
+      </div>
+
+      <div class="crews">
+        <a href="#" onclick="crew1()"></a>
+        <a href="#" onclick="crew2()"></a>
+        <a href="#" onclick="crew3()"></a>
+        <a href="#" onclick="crew4()"></a>
+      </div>
+
+      <div data-names class="names" id="crews-name">
+          <span >Commander</span>
+          <span>Douglas Hurley</span>
+      </div>
+      
+      <div class="crew-p-parent">
+        <p class="crew-p">
+            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+        </p>
+    </div>
+
+</section>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/dcadbf7b72.js" crossorigin="anonymous"></script>
+
+<script src="./index.js"></script>
+
+
+</body>
+</html>
